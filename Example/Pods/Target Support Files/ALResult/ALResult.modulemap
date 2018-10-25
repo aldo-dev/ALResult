@@ -1,0 +1,6 @@
+framework module ALResult {
+  umbrella header "ALResult-umbrella.h"
+
+  export *
+  module * { export * }
+}

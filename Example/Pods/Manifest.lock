@@ -1,0 +1,16 @@
+PODS:
+  - ALResult (0.1.0)
+
+DEPENDENCIES:
+  - ALResult (from `../`)
+
+EXTERNAL SOURCES:
+  ALResult:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ALResult: d03aea767b130810ec274dd5fdaddae39365399a
+
+PODFILE CHECKSUM: fcdfc3f72a70fe78e7e73dd26a131f59a7cfd027
+
+COCOAPODS: 1.5.0

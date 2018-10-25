@@ -1,0 +1,4 @@
+use_frameworks!
+target 'ALResult_Tests' do
+  pod 'ALResult', :path => '../'
+end
