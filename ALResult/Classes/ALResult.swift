@@ -81,7 +81,7 @@ public enum ALResult<R> {
         }
     }
     
-    public func flatMap<U>(f: (R) throws -> ALResult<U>) -> ALResult<U> {
+    public func flatMap<U>(_ f: (R) throws -> ALResult<U>) -> ALResult<U> {
         do {
             switch self {
             case .right(let val): return try f(val)
@@ -115,20 +115,19 @@ public enum ALResult<R> {
     /// - Parameter work: Block of work with error
     /// - Returns: ALEither<R, E>
     @discardableResult
-    public func doIfWrong(work: (Error) -> Void) -> ALResult<R> {
+    public func onError(_ work: (Error) -> Void) -> ALResult<R> {
         if case .wrong(let err) = self {
             work(err)
-            
         }
         return self
     }
     
-    /// doIfWrong function allows to perform some work if the result is wrong,
+    /// onError function allows to perform some work if the result is wrong,
     /// Does additional check for error types
     /// - Parameter work: Block of work with error
     /// - Returns: ALEither<R, E>
     @discardableResult
-    public func doIfWrong<U>(of type: Error.Type, work: (U) -> Void) -> ALResult<R> {
+    public func onError<U>(of type: Error.Type, work: (U) -> Void) -> ALResult<R> {
         if case .wrong(let err) = self {
             if let e = err as? U {
                 work(e)
@@ -138,23 +137,28 @@ public enum ALResult<R> {
         return self
     }
     
-    /// doIfWrong function allows to perform some work if the result is wrong,
+    /// onError function allows to perform some work if the result is wrong,
     ///
     /// - Parameter work: Block of work with error
     /// - Returns: ALEither<R, E>
     @discardableResult
-    public func doIfWrong(if predicate: (Error) -> Bool, work: (Error) -> Void) -> ALResult<R> {
+    public func onError(if predicate: (Error) -> Bool, work: (Error) -> Void) -> ALResult<R> {
         if case .wrong(let err) = self {
             work(err)
         }
         return self
     }
     
-    public func fork(right: ((R)->Void)?, wrong: ((Error) -> Void)?) {
-        switch self {
-        case let .right(val): right?(val)
-        case let .wrong(val): wrong?(val)
+    public func fork(right: ((R) throws ->Void)?, wrong: ((Error) -> Void)?) {
+        do {
+            switch self {
+            case let .right(val): try right?(val)
+            case let .wrong(err): wrong?(err)
+            }
+        } catch {
+            wrong?(error)
         }
+        
     }
     
     /// Allows to provide default value in case of error
