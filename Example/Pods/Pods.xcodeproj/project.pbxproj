@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		18A78F38D8B334C629D19DFB288733D0 /* ALResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2474EF7570D79A1961130384334212C1 /* ALResult.swift */; };
-		289D152321822D2E00DBE5B6 /* OptionalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289D152221822D2E00DBE5B6 /* OptionalExtension.swift */; };
 		303234D3A1C2F1110D50AB50E149001C /* ALResult-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB8FF7D59F94D5B6871CE729B0EC5A9 /* ALResult-dummy.m */; };
 		6F5D3D99EC2DADF4420230D87C47F731 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		CD72B9DFBE1E656AF71E4B631B3DE06C /* Pods-ALResult_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF4E3809919B9C8FDA8DF2D255BC9FA /* Pods-ALResult_Tests-dummy.m */; };
 		D4D7D6EEE0DA191B94ECC95792D32626 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		E50E3415218CC91400F978E7 /* OptionalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50E3414218CC91400F978E7 /* OptionalExtension.swift */; };
 		ED00332ABB0822CFFAE328094885CCC7 /* Pods-ALResult_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E37156D8231D1DCD416FC1041439B1F6 /* Pods-ALResult_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F3DE7AF1D7910DE1B27CA5447A9851A3 /* ALResult-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BE79E3A00F85979B3278DACEA5DF5CFC /* ALResult-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -33,7 +33,6 @@
 		1D01BCAC1CC262F9A402455CFA1D7817 /* Pods_ALResult_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ALResult_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D20C160678F692F4C8F5FD7DE4815D6 /* Pods-ALResult_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ALResult_Tests.modulemap"; sourceTree = "<group>"; };
 		2474EF7570D79A1961130384334212C1 /* ALResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ALResult.swift; path = ALResult/Classes/ALResult.swift; sourceTree = "<group>"; };
-		289D152221822D2E00DBE5B6 /* OptionalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalExtension.swift; sourceTree = "<group>"; };
 		2B78C8DA5E9203AA67BDC1CD91E19E89 /* Pods-ALResult_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ALResult_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4CF4E3809919B9C8FDA8DF2D255BC9FA /* Pods-ALResult_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ALResult_Tests-dummy.m"; sourceTree = "<group>"; };
 		4FB8FF7D59F94D5B6871CE729B0EC5A9 /* ALResult-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ALResult-dummy.m"; sourceTree = "<group>"; };
@@ -52,6 +51,7 @@
 		DCE24EFF6D355AD20FBBCAC5C587190C /* Pods-ALResult_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ALResult_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E37156D8231D1DCD416FC1041439B1F6 /* Pods-ALResult_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ALResult_Tests-umbrella.h"; sourceTree = "<group>"; };
 		E466D6D54A688E6544DE0A3F94FA65D2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E50E3414218CC91400F978E7 /* OptionalExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OptionalExtension.swift; path = ALResult/Classes/OptionalExtension.swift; sourceTree = "<group>"; };
 		ED8DFD9D2CB686F0E13A7E68C80CB2C2 /* Pods-ALResult_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ALResult_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,7 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				4083BD2735C2DF18336285C48C6346FE /* ALResult */,
-				289D152221822D2E00DBE5B6 /* OptionalExtension.swift */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -96,6 +95,7 @@
 		4083BD2735C2DF18336285C48C6346FE /* ALResult */ = {
 			isa = PBXGroup;
 			children = (
+				E50E3414218CC91400F978E7 /* OptionalExtension.swift */,
 				2474EF7570D79A1961130384334212C1 /* ALResult.swift */,
 				E830BDC9DD509517895B4C63EB3E713E /* Pod */,
 				DEA6595156B536A09F54CE83FFD44D73 /* Support Files */,
@@ -270,7 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				289D152321822D2E00DBE5B6 /* OptionalExtension.swift in Sources */,
+				E50E3415218CC91400F978E7 /* OptionalExtension.swift in Sources */,
 				303234D3A1C2F1110D50AB50E149001C /* ALResult-dummy.m in Sources */,
 				18A78F38D8B334C629D19DFB288733D0 /* ALResult.swift in Sources */,
 			);
