@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'EitherResult'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A short description of ALResult.'
 
 # This description is used to generate tags and improve search results.
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/aldo-dev/ALResult'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'AlexHmelevskiAG' => 'alexei.hmelevski@gmail.com' }
+  s.author           = { 'ALDO inc.' => 'aldodev@adlogroup.com' }
   s.source           = { :git => 'https://github.com/aldo-dev/ALResult.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
