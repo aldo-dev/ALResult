@@ -63,4 +63,14 @@ class ALResultTestCases: XCTestCase {
         ALResult<Int>(error).filter({$0 > 0}, default: 0)
                             .testResultIsWrong(expectedError: error)
     }
+    
+    func test_result_is_equal() {
+        let result = ALResult.right("test")
+        tester.testResultIsEqual(result: result, expectedResult: .right("test"))
+    }
+    
+    func test_result_is_not_equal() {
+        let result = ALResult.right("test")
+        tester.testResultIsNotEqual(result: result, expectedResult: .right("tes"))
+    }
 }
