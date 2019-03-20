@@ -12,9 +12,6 @@ import XCTest
 @testable import ALResult
 
 
-
-
-
 extension ALResult where R: Equatable {
     func testResultIsRight(expectedValue: R,
                             file: StaticString = #file, line: UInt = #line) {
@@ -55,5 +52,17 @@ final class ResultTester {
         case let .wrong(error): XCTAssertEqual(expectedError.localizedDescription, error.localizedDescription, file: file, line: line)
         default: XCTFail("Expect Success ", file: file, line: line)
         }
+    }
+    
+    func testResultIsEqual<T: Equatable>(result: ALResult<T>,
+                           expectedResult: ALResult<T>,
+                           file: StaticString = #file, line: UInt = #line) {
+        XCTAssertEqual(result, expectedResult, file: file, line: line)
+    }
+    
+    func testResultIsNotEqual<T: Equatable>(result: ALResult<T>,
+                                            expectedResult: ALResult<T>,
+                                            file: StaticString = #file, line: UInt = #line){
+        XCTAssertNotEqual(result, expectedResult, file: file, line: line)
     }
 }
