@@ -1,5 +1,5 @@
 //
-//  ALResult + Equatable.swift
+//  ALResult_Equatable.swift
 //  ALResult
 //
 //  Created by Piyush Sharma on 2019-03-20.

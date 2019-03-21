@@ -13,7 +13,7 @@
 		CD72B9DFBE1E656AF71E4B631B3DE06C /* Pods-ALResult_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF4E3809919B9C8FDA8DF2D255BC9FA /* Pods-ALResult_Tests-dummy.m */; };
 		D4D7D6EEE0DA191B94ECC95792D32626 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		E50E3415218CC91400F978E7 /* OptionalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50E3414218CC91400F978E7 /* OptionalExtension.swift */; };
-		E55CCFDA2242B6E400E9E967 /* ALResult + Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55CCFD92242B6E400E9E967 /* ALResult + Equatable.swift */; };
+		E55CCFDA2242B6E400E9E967 /* ALResultEquatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55CCFD92242B6E400E9E967 /* ALResultEquatable.swift */; };
 		ED00332ABB0822CFFAE328094885CCC7 /* Pods-ALResult_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E37156D8231D1DCD416FC1041439B1F6 /* Pods-ALResult_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F3DE7AF1D7910DE1B27CA5447A9851A3 /* ALResult-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BE79E3A00F85979B3278DACEA5DF5CFC /* ALResult-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -53,7 +53,7 @@
 		E37156D8231D1DCD416FC1041439B1F6 /* Pods-ALResult_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ALResult_Tests-umbrella.h"; sourceTree = "<group>"; };
 		E466D6D54A688E6544DE0A3F94FA65D2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E50E3414218CC91400F978E7 /* OptionalExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OptionalExtension.swift; path = ALResult/Classes/OptionalExtension.swift; sourceTree = "<group>"; };
-		E55CCFD92242B6E400E9E967 /* ALResult + Equatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ALResult + Equatable.swift"; path = "ALResult/Classes/ALResult + Equatable.swift"; sourceTree = "<group>"; };
+		E55CCFD92242B6E400E9E967 /* ALResultEquatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ALResultEquatable.swift; path = ALResult/Classes/ALResultEquatable.swift; sourceTree = "<group>"; };
 		ED8DFD9D2CB686F0E13A7E68C80CB2C2 /* Pods-ALResult_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ALResult_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,7 +99,7 @@
 			children = (
 				E50E3414218CC91400F978E7 /* OptionalExtension.swift */,
 				2474EF7570D79A1961130384334212C1 /* ALResult.swift */,
-				E55CCFD92242B6E400E9E967 /* ALResult + Equatable.swift */,
+				E55CCFD92242B6E400E9E967 /* ALResultEquatable.swift */,
 				E830BDC9DD509517895B4C63EB3E713E /* Pod */,
 				DEA6595156B536A09F54CE83FFD44D73 /* Support Files */,
 			);
@@ -273,7 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E55CCFDA2242B6E400E9E967 /* ALResult + Equatable.swift in Sources */,
+				E55CCFDA2242B6E400E9E967 /* ALResultEquatable.swift in Sources */,
 				E50E3415218CC91400F978E7 /* OptionalExtension.swift in Sources */,
 				303234D3A1C2F1110D50AB50E149001C /* ALResult-dummy.m in Sources */,
 				18A78F38D8B334C629D19DFB288733D0 /* ALResult.swift in Sources */,
